@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperCool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbb-r1-Nej">
+                                <rect key="frame" x="69" y="318" width="237" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Make Me Super Cool">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="coolButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ZB-DB-T00"/>
+                                    <action selector="makeCool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aq4-di-9Xq"/>
+                                    <action selector="makeMeCooler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bBK-S2-4r7"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SuperCool" translatesAutoresizingMaskIntoConstraints="NO" id="f6O-LU-Ttv">
+                                <rect key="frame" x="20" y="0.0" width="335" height="212"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue02" translatesAutoresizingMaskIntoConstraints="NO" id="uCI-x4-CBA">
+                                <rect key="frame" x="-381" y="-247" width="904" height="1161"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="coolBG" destination="uCI-x4-CBA" id="mkc-Td-kez"/>
+                        <outlet property="coolBackGround" destination="uCI-x4-CBA" id="br9-K6-WFe"/>
+                        <outlet property="coolLogo" destination="f6O-LU-Ttv" id="Pey-dA-tV7"/>
+                        <outlet property="notCoolButton" destination="wbb-r1-Nej" id="Fab-un-njv"/>
+                        <outlet property="unCoolButton" destination="wbb-r1-Nej" id="3Wd-Th-n0m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.5" y="429.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SuperCool" width="700" height="115"/>
+        <image name="blue02" width="1667" height="1667"/>
+    </resources>
+</document>
